@@ -130,7 +130,7 @@ class Payment_Adapter_GoCardless implements InjectionAwareInterface
                     'select',
                     [
                         'label' => 'Mark invoices paid when a payment is',
-                        'options' => [
+                        'multiOptions' => [
                             'paid_out' => 'Paid out to your bank (money has arrived)',
                             'confirmed' => 'Confirmed / collected (funds secured, payout later)',
                         ],
@@ -140,7 +140,7 @@ class Payment_Adapter_GoCardless implements InjectionAwareInterface
                     'radio',
                     [
                         'label' => 'Redirect to GoCardless automatically',
-                        'options' => ['Yes' => 1, 'No' => 0],
+                        'multiOptions' => ['Yes' => 1, 'No' => 0],
                         'default' => '0',
                     ],
                 ],
