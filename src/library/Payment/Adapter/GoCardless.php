@@ -144,6 +144,11 @@ class Payment_Adapter_GoCardless implements InjectionAwareInterface
                         'default' => '0',
                     ],
                 ],
+                'logo' => [
+                    'logo' => 'gocardless.png',
+                    'height' => 22,
+                    'width' => 148,
+                ],
             ],
         ];
     }
